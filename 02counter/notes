@@ -1,0 +1,31 @@
+# virtual dom
+React does not use virtual dom usually now a days.
+
+# lets read an article 
+
+create root: what does this do behind the scene 
+
+->Behind the scene it creates a dom like structure , then aapke main dom ko aur apne dom ko compare karte hai aur sirf un nhi chizo k update karta hai jo zaruri hai, but browser pura dom ko update karta hai (page load ke wakt par ) this is called page reload , lekin virtual dom ke andar aap pura dom ko  track aur trace kar skate ho tree like structure pe aur jo jo value change hui hai sirf usko dom se niakal ke sirf 
+usko update kar skate ho original dom pe , but suppoise some element are network dependent , to reduce redundatn intermidiate update 
+so we use optimised algoritm so har ui ko instantenaeously update karna zaruri nai hai. react behinde the scene uses virtual dom.
+
+
+# Reconciliation is the algorihtm behin what is popularly understood as the virtual dom
+
+
+
+
+# Props
+
+
+
+# Tailwind CSS 
+go to tailwind for vite website and doo all the things then go to the dev ui to get the componenets and make yhour componenets 
+once we make a cad componenets why not keep it in a seprate file and reuse it alternatively 
+,generally what we do is we keep html and css sepratly, but react keeps everything at once and seprate things based on what they do 
+and not on what technology they work on 
+
+
+
+# routing , State mgt 
+
