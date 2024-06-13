@@ -19,7 +19,7 @@ const {register,handleSubmit}= useForm()
 const create =  async(data)=>{
     setError("")
     try{
-            const session= await authService.createAccount(data)
+            const session= await authService.createAccount(data)//once account is created we get a session if so check 
             if(session)
                 {
                     const userData=await authService.getCurrentUser();

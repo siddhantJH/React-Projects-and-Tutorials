@@ -25,10 +25,10 @@ function Login(){
     const login=async (data)=>{
         setError("")
         try{
-             const session = await authService.login(data)  //object jaega , yaha se return aata hai session means agar session ai to user logged in hai agar session nai mila hai mreans useer logged in nai hai 
+             const session = await authService.login(data)  //object jaega , yaha se return aata hai session means agar session ai to user logged in hai agar session nai mila hai mreans user logged in nai hai 
             if(session){
                 const userData =  await authService.getCurrentUser();
-                console.log(userData)
+                // console.log(userData)
                 if(userData)
                     {
                         dispatch(storeLogin(userData));
