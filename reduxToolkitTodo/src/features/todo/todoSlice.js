@@ -26,7 +26,8 @@ export const todoSlice = createSlice({
             }
             state.todos.push(todo)   //here we are pushing the new todo into the state
         },  //this fucntion takes two parameter and this is the syntax , state gives us access to the initial vlaues of the state 
-        removeTodo:(state,action)=>{ //now we know that state ke andar hame milta hau current state and action ke andar jo bhi data pass hora hai , ab mujhe pata hai remove karne ke liye action me mujhe inhone aik id bheja hoga 
+            removeTodo:(state,action)=>{ //now we know that state ke andar hame milta hau current state and action ke andar jo bhi data pass hora hai,
+            //ab mujhe pata hai remove karne ke liye action me mujhe inhone aik id bheja hoga
             state.todos=state.todos.filter((todo)=>{ //modifyring the actual state.todos list 
               return  todo.id !== action.payload  //which all not matched it gets filtered out 
             })

@@ -4,7 +4,8 @@ import { addTodo,removeTodo } from "../features/todo/todoSlice";
 
 function AddTodo()
 {
-    //addTodo store ke andar kuch ad karna hai to add hota hia dispatch se to kuch na kuch event dispacth karna padega 
+    //addTodo store ke andar kuch ad karna hai to add
+    //hota hia dispatch se to kuch na kuch event dispatch karna padega
     const [input,setInput]=useState();
     //now we need to bring the wireup useDispatch()
     const dispatch=useDispatch();
